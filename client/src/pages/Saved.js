@@ -37,15 +37,15 @@ class Saved extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1 className="text-center">
-                <strong>(React) Google Books Search</strong>
+                <strong>Find A book</strong>
               </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+              <h2 className="text-center">Save a book for latter.</h2>
             </Jumbotron>
           </Col>
         </Row>
         <Row>
           <Col size="md-12">
-            <Card title="Saved Books" icon="download">
+            <Card title="My Books" >
               {this.state.books.length ? (
                 <List>
                   {this.state.books.map(book => (
@@ -69,7 +69,7 @@ class Saved extends Component {
                   ))}
                 </List>
               ) : (
-                <h2 className="text-center">No Saved Books</h2>
+                <h2 className="text-center">No Books yet</h2>
               )}
             </Card>
           </Col>
